@@ -16,7 +16,7 @@ Function tabulate() is used to generate table: <Br>
 <b> from tabulate import tabulate </b> <br>
 <p> 
     data = [["Original Sentence:", "Translated Sentence:"],
-                [self.word, str(translation.text)]]
+                [self.word, str(translation.text)]]<br>
         return tabulate(data) 
 </p>
 
@@ -24,16 +24,16 @@ Function tabulate() is used to generate table: <Br>
 Parameter headers allows you to pass an additional argument that specifies column names:  <br>
 <p> 
     data = [["Original Sentence:", "Translated Sentence:"],
-                [self.word, str(translation.text)]]
-        return tabulate(data, headers="firstrow") 
+                [self.word, str(translation.text)]]<br>
+    return tabulate(data, <b> headers="firstrow" </b>) 
 </p>
 
 ### Table style
 tabulate supports different table styles.
 <p> 
     data = [["Original Sentence:", "Translated Sentence:"],
-                [self.word, str(translation.text)]]
-        return tabulate(data, headers="firstrow", tablefmt="fancy_grid")
+                [self.word, str(translation.text)]]<br>
+    return tabulate(data, headers="firstrow",<b> tablefmt="fancy_grid" </b>)
 </p>
         
         
